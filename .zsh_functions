@@ -53,7 +53,15 @@ function up {
 }  
 
 
-#function to generate a cpp project template
+# function to generate a cpp project template
+# takes a string of argument, the firs is the project name, the rest
+# are the names of all of the classes you want to make. This will make
+# a dicrectory for the project in the CWD as the name of the project name
+# (1st argument), it will then make a readme with the project name as the
+# header in the file. It then builds a src and build directory for the project..
+# Finally, for every class name given, it adds a $class.h and $class.cpp file
+# in the src directory. It puts header guards in the .h file and include statement
+# in the .cpp file.
 function cppgenerate {
     proj_name=$1
 
