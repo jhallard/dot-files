@@ -3,6 +3,10 @@ Dot-Files
 
 This is my collection of scripts and configuration files for the  [i3-gaps window manager][i3gaps], zsh, [terminator][terminator], and [lemonbar][lemonbar].
 
+![Home](example-screenshots/home1.png)
+![Fake Busy](example-screenshots/work1.png)
+![Clean](example-screenshots/clean1.png)
+
 * TODO - Add Pictures *
 
 ### Get and Install
