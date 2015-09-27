@@ -3,11 +3,6 @@ Dot-Files
 
 This is my collection of scripts and configuration files for the  [i3-gaps window manager][i3gaps], zsh, [terminator][terminator], and [lemonbar][lemonbar].
 
-![Home](example-screenshots/home1.png)
-![Fake Busy](example-screenshots/work1.png)
-![Clean](example-screenshots/clean1.png)
-
-* TODO - Add Pictures *
 
 ### Get and Install
 I use these files on Arch Linux but you should be able to use them with i3 on other distros. 
@@ -50,6 +45,13 @@ The script to change the color is `gen_terminator_config.py`. I manually insert 
 $ ln -s $CONFIGDIR/terminator/gen_terminator_config.py /usr/bin/change_terminal_theme
 ```
 If you give this script an argument containing the name of one of the files in the `colors/` directory, then this script will change the default profile in the `config` file to contain the colors for that color-file. If no argument is given, it a file in that directory at random and use it. 
+
+### Screenshots
+
+![Home](example-screenshots/home1.png)
+![Fake Busy](example-screenshots/work1.png)
+![Clean](example-screenshots/clean1.png)
+
 
  [i3gaps]: https://github.com/Airblader/i3
  [terminator]:http://gnometerminator.blogspot.com/p/introduction.html
