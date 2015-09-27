@@ -43,7 +43,7 @@ it contains the default profile declaration and the setting to turn off scroll b
 The script to change the color is `gen_terminator_config.py`. I manually insert a symbolic link to this script in `/usr/bin/` with the following commmmand :
 
 ```sh
-ln -s $CONFIGDIR/terminator/gen_terminator_config.py /usr/bin/change_terminal_theme
+$ ln -s $CONFIGDIR/terminator/gen_terminator_config.py /usr/bin/change_terminal_theme
 ```
 If you give this script an argument containing the name of one of the files in the `colors/` directory, then this script will change the default profile in the `config` file to contain the colors for that color-file. If no argument is given, it a file in that directory at random and use it. 
 
