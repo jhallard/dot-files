@@ -1,8 +1,16 @@
 #!/bin/bash
 
+# Originally from  :
 # ObliviousGmn, June 2015
 # https://github.com/ObliviousGmn
+
+# Copied and edited by 
+# jhallard, September 2015
+# https://github.com/jhallard
+
+###################
 # Lemonbar Configs.. 
+###################
 
 # Screen Width, For Panel ..
 SW=`xrandr | grep current | awk '{print $8}'`

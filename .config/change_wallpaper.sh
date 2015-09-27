@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# jhallard September 2015
+# https://github.com/jhallard
+
 if [ "$#" -gt 1 ]; then
     if [ "$1" -eq "--name" ]; then
         WP_FILE=$2

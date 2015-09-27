@@ -1,4 +1,8 @@
 #!/bin/env python
+
+# jhallard September 2015
+# https://github.com/jhallard
+
 import random
 import os, os.path
 import sys
