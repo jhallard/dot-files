@@ -1,0 +1,8 @@
+export HOME= # ** YOU HAVE TO SET THIS!!! ** 
+export LINUX=# CHANGE THIS AROUND TO FIT YOUR COMPUTER
+export PICTURES="$LINUX/Pictures/"
+export WALLPAPERS="$PICTURES/wallpapers/"
+export SCREENSHOTS="$PICTURES/screenshots/"
+export CONFIGDIR="$HOME/.config/"
+export GH_USER="" # ENTER YOUR GH USER NAME #
+export MPD_PORT="6613"
