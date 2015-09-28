@@ -1,4 +1,7 @@
 # ## Functions ## #
+#
+#  jhallard, Sept 2015
+#  https://github.com/jhallard
 
 #show newst log file to stdout in CWD
 function snl {

@@ -1,3 +1,6 @@
+#  jhallard, Sept 2015
+#  https://github.com/jhallard
+
 # Path to your oh-my-zsh installation.
 export ZSH=/home/jhallard/.oh-my-zsh
 

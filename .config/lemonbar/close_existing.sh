@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# jhallard, Sept. 2015
+# https://github.com/jhallard
+
 pids=$(ps -ef | grep -i lemonbar | awk '{print $2}')
 
 if [[ -z "$pids" ]]; then

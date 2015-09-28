@@ -1,4 +1,8 @@
 #!/bin/env python
+#  jhallard, Sept 2015
+#  https://github.com/jhallard
+
+# Make some links to oft-used scripts
 import random
 import os, os.path
 import sys
