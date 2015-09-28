@@ -1,0 +1,8 @@
+export HOME="/home/jhallard/"
+export LINUX="/home/jhallard/linux/"
+export PICTURES="$LINUX/Pictures/"
+export WALLPAPERS="$PICTURES/wallpapers/"
+export SCREENSHOTS="$PICTURES/screenshots/"
+export CONFIGDIR="$HOME/.config/"
+
+export MPD_PORT="6613"

@@ -1,0 +1,54 @@
+
+[global_config]
+  always_split_with_profile = True
+  borderless = True
+  broadcast_default = off
+  geometry_hinting = False
+  inactive_color_offset = 0.89
+  scrollbar_position = disabled
+  titlebars = False
+  title_hide_sizetext = True
+  title_inactive_bg_color = "#002b36"
+  title_inactive_fg_color = "#eee8d5"
+  title_receive_bg_color = "#002b36"
+  title_receive_fg_color = "#eee8d5"
+  title_transmit_bg_color = "#002b36"
+  title_transmit_fg_color = "#eee8d5"
+  title_use_system_font = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    copy_on_selection = True
+    font = Inconsolata Medium 11
+    scrollback_infinite = True
+    show_titlebar = False
+    use_system_font = False
+
+    palette = "#181818:#810009:#48513b:#cc8b3f:#576d8c:#724d7c:#5c4f4b:#aea47f:#555555:#ac3835:#a6a75d:#dcdf7c:#3097c6:#d33061:#f3dbb2:#f4f4f4"
+    background_color = "#191c27"
+    cursor_color = "#92805b"
+    foreground_color = "#aea47a"
+    background_image = None
+
+
+  [[old]]
+    background_color = "#002b36"
+    background_image = None
+    copy_on_selection = True
+    cursor_color = "#eee8d5"
+    font = DejaVu Sans Mono 11
+    foreground_color = "#eee8d5"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scrollback_infinite = True
+    show_titlebar = False
+    use_system_font = False

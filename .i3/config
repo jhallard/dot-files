@@ -1,14 +1,12 @@
-
-# jhallard September 2015
-# # https://github.com/jhallard
-
 ### MOD Key ##
 set $mod Mod1 
 
 
 ### Font Config ###
-font pango:Ubuntu Mono 10 
-font pango:Source Code Pro 7
+# font pango:Ubuntu Mono 10 
+# font pango:Source Code Pro 7
+
+font pango:Inconsolata Medium 9
 
 
 #### Sizes ####
@@ -46,6 +44,9 @@ client.unfocused                 $hfgcolor $iacolor  $fgcolor $iacolor
 # bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec terminator
 bindsym ctrl+$mod+t exec terminator
+
+# open thunar with cmodh
+bindsym ctrl+$mod+h exec thunar
 
 # run google chrome from ctrl+atl+g
 bindsym ctrl+$mod+g exec google-chrome-stable
@@ -149,6 +150,9 @@ bindsym $mod+a focus parent
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
+# There also is the (new) i3-dmenu-desktop which only displays applications # shipping a .desktop file. It is a wrapper around dmenu, so you need that
+# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
 
 #### Reload and Resizing ####
 
@@ -196,9 +200,40 @@ bindsym $mod+r mode "resize"
 #### Startup Programs ####
 exec sh source ~/.zsh_variables
 exec sh change_wallpaper
+# exec conky --config=$CONFIGDIR/.conkyrc -d
 
 ##### Bar ####
 
 
 exec  sh "$CONFIGDIR/lemonbar/runbar.sh"
 
+# exec volumeicon
+
+### This is i3bar, it works but is ugly.
+### Trying to use lemonbar instead
+# bar {
+    # position top
+    # status_command i3status
+    # tray_output LVDS
+    # colors{
+        # background #232323
+        # statusline #DCDCDC
+    # }
+# }
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+# bar {
+        # colors {
+        # background #002B36
+        # statusline #EEE8D5
+        # separator #666666
+# 
+        # focused_workspace  #008fff #007fff #ffffff
+        # active_workspace   #333333 #5f676a #ffffff
+        # inactive_workspace #333333 #222222 #888888
+        # urgent_workspace   #aa0000 #990000 #ffffff
+        # }
+        # position top
+        # status_command i3status -c ~/.i3/i3status.conf
+# }
