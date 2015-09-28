@@ -1,8 +1,4 @@
 #!/bin/env python
-
-# jhallard September 2015
-# https://github.com/jhallard
-
 import random
 import os, os.path
 import sys
@@ -38,12 +34,26 @@ configstr = """
 [profiles]
   [[default]]
     copy_on_selection = True
-    # font = DejaVu Sans Mono 10
+    font = Inconsolata Medium 11
     scrollback_infinite = True
     show_titlebar = False
     use_system_font = False
 """
 
+oldprofile = """
+
+  [[old]]
+    background_color = "#002b36"
+    background_image = None
+    copy_on_selection = True
+    cursor_color = "#eee8d5"
+    font = DejaVu Sans Mono 11
+    foreground_color = "#eee8d5"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scrollback_infinite = True
+    show_titlebar = False
+    use_system_font = False
+"""
 
 if __name__ == "__main__" :
     DIR = '/home/jhallard/.config/terminator/themes/'
@@ -75,5 +85,6 @@ if __name__ == "__main__" :
 
     termconf.write(configstr)
     termconf.write(theme)
+    termconf.write(oldprofile)
     termconf.close()
 

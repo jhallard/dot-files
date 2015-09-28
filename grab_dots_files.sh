@@ -54,7 +54,7 @@ ret=""
 for dir in "${array[@]}"
 do
     if [ -d "$dir" ]; then
-        cp -r $dir $dfdir
+        cp -r $dir $dfdir/.config/
     else
         echo "Not Found : " + `pwd` + $dir
     fi

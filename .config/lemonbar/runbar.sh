@@ -1,13 +1,5 @@
 #!/usr/bin/bash
 
-# Originally from  :
-# ObliviousGmn, June 2015
-# https://github.com/ObliviousGmn
-
-# Copied and edited by 
-# jhallard, September 2015
-# https://github.com/jhallard
-
 # close any existing lemonbars
 #$CONFIGDIR/lemonbar/close_existing.sh
 . $CONFIGDIR/lemonbar/bar_config 
@@ -34,7 +26,8 @@
  menu(){ # Useless for now ..
     # echo "%{B$BBLUE}%{F$BG} GMN  %{B-}%{F-}"
     # echo "%{B$BBLUE}%{F$BG} MOTHERSHIP  %{B-}%{F-}"
-    echo "%{$bold} MOTHERSHIP  %{$normal}"
+    hostname=`hostname | tr '[:lower:]' '[:upper:]'`
+    echo "%{$bold} $hostname %{$normal}"
 }
 
  temp(){ # CPUs temp ..
@@ -83,10 +76,10 @@
 }
 
  last(){ # Weechat, Last highlight ..
-  last=`(tail -n1) <$HOME/$USER/Panel/Weelog`
+  last=`(tail -n1) <$HOME/Gmnbox/Panel/Weelog`
 
   if [[ $last ]]; then
-    echo "%{A:cat /dev/null > $HOME/$USER/Panel/Weelog:}${last}%{A}"
+    echo "%{A:cat /dev/null > $HOME/Gmnbox/Panel/Weelog:}${last}%{A}"
   fi
 }
 
