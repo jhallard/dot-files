@@ -1,0 +1,5 @@
+alias srcz="source ~/.zshrc"
+alias edz="vim ~/.zshrc"
+alias eda="vim ~/.sh_aliases && srcz"
+alias edf="vim ~/.sh_functions && srcz"
+alias vim="nvim"
