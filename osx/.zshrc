@@ -111,6 +111,12 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.sh_aliases
 source ~/.sh_functions
+source ~/.sh_variables
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Confgure direnv to load automatically
+eval "$(direnv hook zsh)"
+
+export PATH="$PATH:$HOME/bin:$HOME/.local/bin"
