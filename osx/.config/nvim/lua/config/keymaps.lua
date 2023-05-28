@@ -34,3 +34,17 @@ map("n", "<C-J>", "<C-W><C-J>")
 map("n", "<C-K>", "<C-W><C-K>")
 map("n", "<C-L>", "<C-W><C-L>")
 map("n", "<C-H>", "<C-W><C-H>")
+
+local Terminal = require("toggleterm.terminal").Terminal
+local edit_keymaps = Terminal:new({
+	dir = "~/.config/nvim/lua",
+	cmd = "nvim ./config/keymaps.lua",
+	direction = "tab",
+})
+
+function _edit_keymaps()
+	edit_keymaps:toggle()
+end
+
+-- Open up Vim in keymaps file
+map("n", "<leader>ev", "<cmd>lua _edit_keymaps()<CR>", { noremap = true, silent = true })
