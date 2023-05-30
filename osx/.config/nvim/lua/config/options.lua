@@ -33,3 +33,4 @@ opt.smarttab = true
 -- [[ Splits ]]
 opt.splitright = true -- bool: Place new window to right of current one
 opt.splitbelow = true -- bool: Place new window below the current one
+opt.laststatus = 3 -- show statusline on bottom and simple split between vertical panes

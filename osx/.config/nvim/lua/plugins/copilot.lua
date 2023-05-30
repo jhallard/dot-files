@@ -27,5 +27,9 @@ return {
 			-- but they don't seem to work, so just navigate using j and k for now.
 			enabled = true,
 		},
+		filetypes = {
+			-- TODO: reenable this once I've determined what is causing freezes
+			rust = false,
+		},
 	},
 }

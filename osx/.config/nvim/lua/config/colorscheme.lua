@@ -18,7 +18,6 @@
 -- https://github.com/AlexvZyl/nordic.nvim
 -- vim.cmd("colorscheme nordic")
 
-local keymap = vim.keymap.set
 local map = require("config.utils").map
 
 local darkcolorschemes = {
@@ -29,14 +28,22 @@ local darkcolorschemes = {
 	"kanagawa-wave",
 	"kanagawa",
 	"nordic",
+	"tokyonight",
+	"tokyonight-moon",
+	"tokyonight-storm",
+	"tokyonight-night",
+	"rose-pine-moon",
 }
 local lightcolorschemes = {
 	"kanagawa-lotus",
 	"dawnfox",
+	"tokyonight-day",
+	"rose-pine-dawn",
 }
 local currentdark = 1
 local currentlight = 1
-local CURR_COLORSCHEME_FILE = "./current_colorscheme.lua"
+
+local CURR_COLORSCHEME_FILE = os.getenv("HOME") .. "/.config/nvim/lua/config/current_colorscheme.lua"
 
 function print_colorscheme(colorscheme)
 	vim.schedule(function()

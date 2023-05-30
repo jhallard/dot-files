@@ -47,4 +47,4 @@ function _edit_keymaps()
 end
 
 -- Open up Vim in keymaps file
-map("n", "<leader>ev", "<cmd>lua _edit_keymaps()<CR>", { noremap = true, silent = true })
+map("n", "<leader>ev", "<cmd>lua _edit_keymaps()<CR>", { noremap = true })
