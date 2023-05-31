@@ -119,4 +119,8 @@ source ~/.sh_variables
 # Confgure direnv to load automatically
 eval "$(direnv hook zsh)"
 
+# Ensure out local bin directory is in the path
 export PATH="$PATH:$HOME/bin:$HOME/.local/bin"
+
+# Configure rust
+. "$HOME/.cargo/env"

@@ -3,6 +3,7 @@ alias edz="vim ~/.zshrc"
 alias eda="vim ~/.sh_aliases && srcz"
 alias edf="vim ~/.sh_functions && srcz"
 alias vim="nvim"
+alias c="clear"
 
 alias gitaa="git add -A :/"
 alias gitc="git commit"
@@ -12,3 +13,5 @@ alias goconf="cd ~/.config"
 alias gonvim="cd ~/.config/nvim/lua/"
 alias go="cd ~/workspace"
 alias lg="lazygit"
+
+
